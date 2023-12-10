@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Jscript DATE</title>
+</head>
+<body>
+
+<script >
+    const d = new Date()
+    const meres = ["Κυριακή","Δευτερα ","Τριτη","Τετάρτη", "Πεμπτη","Παρακευή", "Σαββάτο"];
+	
+    document.write(d);
+    document.write("<br>");
+	//document.write(typeof(d));
+    dNum = d.getDate();
+	document.write(dNum);
+	dWeek =d.getDay();
+	document.write("<br>");
+	document.write(dWeek);
+	document.write("<br>");
+	document.write(meres[dWeek]);
+	dyear = d.getFullYear();
+	dMonth = d.getMonth();
+	document.write("<br>");
+	document.write(dMonth);
+	
+	document.write("<br>");
+	document.write(dyear);
+	
+     
+    
+</script>	
+</body>
+</html>

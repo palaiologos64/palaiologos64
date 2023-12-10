@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Jscript με while -- js06.html </title>
+</head>
+<body>
+
+<script >
+    var ar =parseInt( prompt(" Δώσε αριθμό   "));
+    var s=0;
+    var pl= 0;
+    const l1 =[];
+    while (ar !=0){
+      s= s+ar;
+      pl=pl+1;
+      l1.push(ar);
+       
+      ar =parseInt( prompt(" Δώσε αριθμό μηδέν για τέλος   "));    
+    }
+
+    var mo = s/pl;
+
+    document.write(" O Μέσος όρος είναι ");
+    document.write( mo);
+    document.write(" <br>");
+    document.write("<ul>" );
+    for (var i = 0; i < l1.length; i=i+1){
+      var dif = l1[i] -mo ;
+      document.write(" <li> " );
+      document.write(l1[i] );
+      document.write(" διαφορά   " );  
+      document.write( dif.toFixed(2) ); 
+      document.write(" </li> " );
+     
+    }
+    document.write("</ol>" );  
+     
+    
+</script>	
+</body>
+</html>
